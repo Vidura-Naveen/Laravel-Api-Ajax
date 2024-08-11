@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 Route::get('/ajax-example', function () {
     return view('Ajax');
 });
@@ -20,4 +21,9 @@ Route::get('/filter-data', [App\Http\Controllers\ManualWithControllerController:
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/productadd', function () {
+    return view('product.add');
+});
+
 
